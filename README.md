@@ -1,15 +1,15 @@
-```markdown
+
 # Smart ITSM Core - IA Local para Jira Service Management
 
 ## 1. Contexto y Problemática Operativa
-La Mesa de Ayuda de la organización enfrenta ineficiencias críticas derivadas de la gestión manual de incidentes sobre **Jira Service Management Data Center**:
+Las organizaciones enfrentan ineficiencias críticas derivadas de la gestión manual de incidentes sobre **Jira Service Management Data Center**:
 
 * **Despacho Lento y Erróneo:** La clasificación inicial de los tickets depende del criterio humano expuesto a fatiga y diferencias de conocimiento técnico, provocando asignaciones incorrectas a los grupos de soporte (*Infraestructura, Redes, IAM, Aplicaciones*), retrabajo y un alto índice de rebote de tickets.
 * **Dependencia del Conocimiento Individual:** La calidad de la derivación disminuye drásticamente si los analistas más experimentados no están disponibles para realizar el triaje inicial.
 * **Cuellos de Botella por Información Precaria:** Un volumen masivo de tickets ingresa con descripciones vacías o ambiguas (ej: *"no funciona"*, *"da error"*). Esto detiene el flujo operativo, forzando a un analista técnico a formular repreguntas manuales y esperar respuestas, aumentando exponencialmente el MTTR (Mean Time to Resolution).
 
 ### La Solución
-Este proyecto propone un **Orquestador de IA On-Premise (Costo $0)** desacoplado de Jira, diseñado bajo una arquitectura guiada por eventos. Su objetivo es automatizar el triaje y la interacción con el usuario mediante modelos de lenguaje locales (SLMs), garantizando privacidad absoluta de los datos institucionales.
+Este proyecto propone un **Orquestador de IA On-Premise (Costo $0)** desacoplado de Jira, diseñado bajo una arquitectura guiada por eventos. Su objetivo es automatizar el triaje y la interacción con el usuario mediante modelos de lenguaje locales (SLMs), garantizando privacidad absoluta de los datos de la organizacion.
 
 ---
 
@@ -17,7 +17,7 @@ Este proyecto propone un **Orquestador de IA On-Premise (Costo $0)** desacoplado
 
 El sistema está diseñado para madurar de forma progresiva en tres niveles de capacidad técnica:
 
-```text
+```
   +--------------------------------------------------------+
   |  NIVEL 1: MVP - Clasificación e Ingesta Asincrónica     | -> [ESTADO: IMPLEMENTADO]
   |  - Extracción y análisis de Summary + Description.      |
